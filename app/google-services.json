@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "163128625717",
+    "firebase_url": "https://seassonproject-default-rtdb.firebaseio.com",
+    "project_id": "seassonproject",
+    "storage_bucket": "seassonproject.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:163128625717:android:9425c08266a96b4f22bf7c",
+        "android_client_info": {
+          "package_name": "org.techtown.withotilla2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "163128625717-qa5513ka4hnblkvi7nk5qkdshjo062m9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAxdOsAdN7iQjGC1SudxHvEUe_mEt91FBQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "163128625717-qa5513ka4hnblkvi7nk5qkdshjo062m9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

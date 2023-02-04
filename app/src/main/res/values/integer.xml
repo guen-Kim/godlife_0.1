@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<!-- duration: 밀리세컨드   -->
+    <integer name="screen_in_time">300</integer>
+    <integer name="screen_out_time">300</integer>
+</resources>

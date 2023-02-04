@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".LeftMenuActivity">
+
+        <androidx.drawerlayout.widget.DrawerLayout
+            android:id="@+id/drawerLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:openDrawer="start">
+                <!--        navigationView가 화면 어디에 출력되는가?-->
+                <FrameLayout
+                    android:id="@+id/naviFrame"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"></FrameLayout>
+
+
+                <com.google.android.material.navigation.NavigationView
+                    android:id="@+id/naviView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start"
+                    app:headerLayout="@layout/leftmenu_header"
+                    app:menu="@menu/left_menu">
+
+
+                </com.google.android.material.navigation.NavigationView>
+
+        </androidx.drawerlayout.widget.DrawerLayout>
+
+
+</LinearLayout>

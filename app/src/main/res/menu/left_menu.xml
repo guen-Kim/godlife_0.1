@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <group>
+        <item
+            android:id="@+id/menu_login"
+
+            android:title="로그인">
+        </item>
+
+
+        <item
+            android:id="@+id/menu_profile"
+            android:title="내정보수정"
+            android:visible="false">
+<!--기본적으로 안보이는 상태였다가 로그인이 된다면 visiable-->
+        </item>
+
+        <item
+            android:id="@+id/menu_withdrawal"
+            android:title="회원탈퇴"
+            android:visible="false">
+            <!--기본적으로 안보이는 상태였다가 로그인이 된다면 visiable-->
+        </item>
+
+
+    </group>
+
+
+    <item
+        android:id="@+id/navigation_subheader"
+        android:title="갓생살기">
+        <menu>
+            <item
+                android:id="@+id/menu_intro"
+                android:title="about"/>
+        </menu>
+    </item>
+
+</menu>

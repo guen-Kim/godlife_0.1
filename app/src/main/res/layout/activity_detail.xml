@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".LeftMenuActivity"
+    android:background="@color/white">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar"></include>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="300dp">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="#fff"
+                android:layout_margin="7dp"
+                >
+
+                <TextView
+                    android:id="@+id/tvTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:text="제목"/>
+
+
+                <TextView
+                    android:id="@+id/tvRegDateWriter"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colordate"
+                    android:textSize="10dp"
+                    android:text="작성자 - 날짜"
+                    android:gravity="right"/>
+
+            </LinearLayout>
+
+
+                <androidx.viewpager2.widget.ViewPager2
+                    android:id="@+id/viewpager"
+                    android:clipToPadding="false"
+                    android:clipChildren="false"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/frameSize"
+                    android:background="@color/colorOtillaWhite"
+                    android:visibility="gone"/>
+
+
+
+            <com.tbuonomo.viewpagerdotsindicator.WormDotsIndicator
+                android:layout_marginTop="3dp"
+                android:id="@+id/indicator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                app:dotsColor="@color/colorPersonal1"
+                app:dotsCornerRadius="8dp"
+                app:dotsSize="10dp"
+                app:dotsSpacing="4dp"
+                app:dotsStrokeWidth="2dp"
+                android:visibility="gone"/>
+
+            <LinearLayout
+                android:background="@color/white"
+                android:id="@+id/llIncreaseHeal"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_gravity="right"
+                android:orientation="horizontal"
+                android:paddingRight="10dp">
+                <Space
+                    android:layout_weight="4"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"/>
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:background="@drawable/firelogin"/>
+
+                <TextView
+                    android:id="@+id/itemCount"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="20dp"
+                    android:text="123 gob"
+                    android:textColor="@color/colorOtillaPurple" />
+
+            </LinearLayout>
+
+            <TextView
+                android:backgroundTint="@color/colorOtillaWhite"
+                android:id="@+id/tvContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                android:layout_marginTop="5dp"
+                android:padding="10dp"
+                android:text="내용들어갈 자리"
+                android:textColor="@color/black"/>
+
+
+
+            </LinearLayout>
+
+        </ScrollView>
+            <!--    ca-app-pub-5964373188708736/1538127892-->
+
+
+            <include layout="@layout/contents_reply"></include>
+
+</LinearLayout>
